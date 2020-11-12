@@ -1,0 +1,41 @@
+log_level = "debug"
+
+driver "terraform" {
+  log = true
+  required_providers {
+    bigip = {
+      source = "F5Networks/bigip"
+    }
+  }
+  backend "consul" {
+    address = "xxxx:8500"
+    scheme  = "http"
+    path    = "tf-state"
+  }
+}
+
+consul {
+  address = "xxxx:8500"
+}
+
+service {
+  name = "nginx"
+  datacenter = "dc1"
+  id = "nginx"
+}
+
+provider "bigip" {
+  address  = "https://xxxx:8443"
+  username = "admin"
+  password = "RDpSS8sbZq"
+}
+
+task {
+  name = "AS3"
+  description = "Create AS3 Applications"
+  source = "f5devcentral/app-consul-sync-nia/bigip"
+  version = "0.1.2"
+  providers = ["bigip"]
+  services = ["nginx"]
+  variable_files = ["/Users/kabu/hashicorp/consul/ct-sync/task.tfvars"]
+}

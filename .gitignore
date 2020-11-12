@@ -1,0 +1,7 @@
+# terraform
+sync-tasks/
+config.hcl
+terraform
+tf-code/**/terraform.tfstate*
+tf-code/infra/admin.shadow
+tf-code/**/.terraform
