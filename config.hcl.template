@@ -37,5 +37,5 @@ task {
   version = "0.1.2"
   providers = ["bigip"]
   services = ["nginx"]
-  variable_files = ["/Users/kabu/hashicorp/consul/ct-sync/task.tfvars"]
+  variable_files = ["task.tfvars"]
 }
