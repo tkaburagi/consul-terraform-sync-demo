@@ -1,7 +1,7 @@
 ## demo for consul-terraform-sync
 
 <kbd>
-  <img src="https://github.com/tkaburagi/consul-terraform-sync-demo/raw/master/pic.png">
+  <img src="https://github.com/tkaburagi/consul-terraform-sync-demo/blob/main/pic.png?raw=true">
 </kbd>
 
 ## setup
