@@ -30,7 +30,7 @@ tmos_declared:
   enabled: true
   icontrollx_trusted_sources: false
   icontrollx_package_urls:
-    - https://github.com/F5Networks/f5-appsvcs-extension/releases/download/v3.19.1/f5-appsvcs-3.19.1-1.noarch.rpm
+    - https://github.com/F5Networks/f5-appsvcs-extension/releases/download/v3.23.0/f5-appsvcs-3.23.0-5.noarch.rpm
   post_onboard_enabled: true
   post_onboard_commands:
     - /config/custom-config.sh
