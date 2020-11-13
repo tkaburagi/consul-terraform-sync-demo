@@ -1,3 +1,9 @@
+## demo for consul-terraform-sync
+
+<kbd>
+  <img src="https://github.com/tkaburagi/consul-terraform-sync-demo/raw/master/pic.png">
+</kbd>
+
 ## setup
 
 * intall [ct-sync](https://releases.hashicorp.com/consul-terraform-sync/)
