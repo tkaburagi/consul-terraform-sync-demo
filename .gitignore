@@ -6,4 +6,5 @@ tf-code/**/terraform.tfstate*
 tf-code/infra/admin.shadow
 tf-code/**/.terraform
 terraform.tfstate
-tf-code/infra/*.pem
+tf-code/**/*.pem
+tf-code/**/*lock*
