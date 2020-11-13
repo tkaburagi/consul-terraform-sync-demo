@@ -74,7 +74,12 @@ cat << EOF > /etc/consul.d/nginx.json
         "interval": "10s",
         "timeout": "1s"
       }
-    ]
+    ],
+    "meta": {
+      "AS3TMPL": "http",
+      "VSIP": "10.0.0.200",
+      "VSPORT": "8080"
+    }
   }
 }
 EOF
