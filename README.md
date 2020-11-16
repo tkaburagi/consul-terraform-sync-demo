@@ -9,6 +9,8 @@
 * intall [ct-sync](https://releases.hashicorp.com/consul-terraform-sync/)
 
 ```shell script
+git clone https://github.com/tkaburagi/consul-terraform-sync-demo
+cd tf-code/infra
 terraform init
 terraform plan
 terraform apply
