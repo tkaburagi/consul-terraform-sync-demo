@@ -17,10 +17,11 @@ terraform apply
 ```
 
 * Copy `CONSUL ADDR`, `BIG IP ADDR` and `BIG IP PASSWORD` from output
-* `./replacer CONSULADDR BIGIPADDR PASSWORD`
 
 ```shell script
-mv config.hcl.template config.hcl
+cd ../..
+./replacer <CONSULADDR BIGIPADDR PASSWORD>
+cat config.hcl
 consul-terraform-sync -config-file config.hcl
 ```
 
