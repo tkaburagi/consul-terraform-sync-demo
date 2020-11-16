@@ -15,7 +15,7 @@ terraform apply
 ```
 
 * Copy `CONSUL ADDR`, `BIG IP ADDR` and `BIG IP PASSWORD` from output
-* replace them in config.hcl.template
+* `./replacer CONSULADDR BIGIPADDR PASSWORD`
 
 ```shell script
 mv config.hcl.template config.hcl
