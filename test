@@ -8,14 +8,14 @@ driver "terraform" {
     }
   }
   backend "consul" {
-    address = "CONSULADDR:8500"
+    address = "test:8500"
     scheme  = "http"
     path    = "tf-state"
   }
 }
 
 consul {
-  address = "CONSULADDR:8500"
+  address = "test:8500"
 }
 
 service {
@@ -27,7 +27,7 @@ service {
 provider "bigip" {
   address  = "https://BIGIPADDR:8443"
   username = "admin"
-  password = "PASSWD"
+  password = "PWD"
 }
 
 task {

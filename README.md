@@ -24,6 +24,11 @@ consul-terraform-sync -config-file config.hcl
 
 ## demo
 
+* After Running CTS, check the terraform will run for syncing between Consul and F5 BIG IP
+* Access to `http://BIGIPADDR:8080` for confirming load balancing.
+* Scale out/in AWS Autoscaling group and see the CTS log. It will sync the env automatically!!
+* tfstate will be store at Consul kv.
+
 ## refer
 
 * https://registry.terraform.io/modules/f5devcentral/app-consul-sync-nia/bigip/latest
